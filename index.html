@@ -1,149 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ajith Kumar Naidu RS | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: rgba(0, 122, 204, 0.9);
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 10px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 10px;
-    }
-    .section {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      border-radius: 8px;
-    }
-    .section h2 {
-      margin-top: 0;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .resume p, .resume li {
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ajith Kumar Naidu RS, Power BI Developer specializing in data visualization, SQL analytics, and ETL pipelines">
+    <meta name="keywords" content="Power BI, SQL, Data Visualization, Portfolio, Ajith Kumar Naidu">
+    <title>Ajith Kumar Naidu RS | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #003087;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero {
+            background: linear-gradient(to right, #003087, #00c4b4);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .project-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .footer {
+            background-color: #003087;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Ajith Kumar Naidu RS</h1>
-    <p>Business Intelligence Analyst | Power BI | SQL | Python | Excel</p>
-    <p><a href="https://linkedin.com/in/ajith-kumar-naidu-rs-0467181a9" target="_blank">LinkedIn</a> | 
-       <a href="https://ajithntr1.github.io/portfolio/Ajith%27s%20Resume.pdf" target="_blank">Download Resume (PDF)</a></p>
-  </header>
-  <div class="container">
-    <div class="section">
-      <h2>About Me</h2>
-      <p>Power BI Developer with over 4 years of experience delivering actionable insights through dashboards, SQL, and Python. Experienced in the e-commerce, travel, and logistics domains. Passionate about transforming raw data into business intelligence.</p>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ajith Kumar Naidu RS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>BI Tools: Power BI (DAX, Power Query, RLS, Bookmarks, Tooltips, Drill-throughs), Excel (Advanced Formulas, PivotTables, Dashboards, VLOOKUP, Data Validation), adaptable to Tableau</li>
-        <li>Programming: SQL (Hive, BigQuery, MySQL; Complex Query Writing, CTEs, Window Functions, Stored Procedures, Query Optimization), Python (Pandas, NumPy), M Language</li>
-        <li>Data Analysis: Data Modeling, ETL Pipelines, Data Cleaning, Data Extraction, Data Integration, Statistical Analysis, SQL Query Development, Ad Hoc Reporting</li>
-        <li>Reporting & Analytics: Exploratory Data Analysis (EDA), KPI Dashboards, Time Series Analysis, Data Governance, Report Automation, Performance Optimization</li>
-        <li>Soft Skills: Critical Thinking, Communication, Stakeholder Collaboration, Problem-Solving</li>
-        <li>Domains: E-commerce, Travel & Hospitality, Logistics</li>
-      </ul>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Ajith Kumar Naidu RS</h1>
+            <p>Business Intelligence Analyst | Power BI | SQL | Python</p>
+            <a href="#projects" class="btn btn-light btn-lg mt-3">View Projects</a>
+            <p class="mt-3"><a href="/Ajiths_Resume.pdf" target="_blank" class="text-white">Download Resume (PDF)</a></p>
+        </div>
+    </section>
 
-    <div class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Business Intelligence Analyst – Flipkart</strong> (Aug 2024 – Present)
-          <ul>
-            <li>Wrote complex SQL queries (CTEs, window functions) to extract and clean large-scale datasets (sales, selection, seller, campaigns) for the Market Place SSE Department, achieving 99.5%+ reporting accuracy in Power BI.</li>
-            <li>Developed optimized ETL pipelines using Hive, Spark, and BigQuery for data integration into Power BI, reducing data processing time by 20%.</li>
-            <li>Designed interactive Power BI dashboards with DAX, Power Query, and KPI trackers (GMV, AOV, repeat rate), improving stakeholder decision-making efficiency by 25%.</li>
-            <li>Optimized Power BI report performance by refining DAX queries and SQL data models, improving dashboard load times by 15%.</li>
-            <li>Conducted Exploratory Data Analysis (EDA) with SQL and Python (Pandas) to identify trends, pricing gaps, and bottlenecks in listings, enhancing selection health by 15%.</li>
-            <li>Delivered ad hoc Power BI reports and SQL-based analyses for urgent stakeholder requests, enabling rapid decision-making with 95%+ on-time delivery.</li>
-            <li>Integrated Power BI reports into internal Marketplace applications for real-time data visualization, leveraging SQL queries and Spark backends.</li>
-            <li>Implemented data governance practices, including Row-Level Security (RLS) in Power BI, ensuring compliance with internal data policies.</li>
-            <li>Performed MoM/YoY performance analysis using DAX and optimized SQL queries, enhancing campaign and assortment strategies.</li>
-            <li>Collaborated with senior leadership to deliver actionable insights within SLA timelines, using SQL-driven Power BI solutions.</li>
-          </ul>
-        </li>
-        <li><strong>Senior Consultant – Via.com / EBIX Travels</strong> (Sep 2022 – Aug 2024)
-          <ul>
-            <li>Built dynamic Power BI dashboards for hotel pricing and booking trends using complex SQL queries (stored procedures, joins), reducing report generation time by 30%.</li>
-            <li>Engineered SQL-based ETL pipelines with CTEs and views for data integration, modeling high-volume transactional data (bookings, cancellations) for Power BI.</li>
-            <li>Created secure Power BI dashboards with DAX measures, Power Query, and RLS, enabling role-based access for revenue teams, improving data accessibility by 20%.</li>
-            <li>Optimized Power BI report performance by streamlining SQL queries and DAX calculations, reducing dashboard refresh times by 12%.</li>
-            <li>Conducted EDA using Python (Pandas) and SQL window functions to detect booking anomalies, improving campaign targeting by 18%.</li>
-            <li>Tracked KPIs (RevPAR, ADR, occupancy) with SQL-driven Power BI reports, ensuring data governance compliance for B2B partners.</li>
-            <li>Integrated Power BI dashboards into partner portals for real-time tracking, supported by optimized SQL queries.</li>
-            <li>Collaborated with product and revenue teams in a client-facing role to deliver filterable reports, enhancing partner satisfaction by 15%.</li>
-            <li>Documented SQL and Power BI methodologies for self-serve analytics, ensuring scalable BI solutions.</li>
-          </ul>
-        </li>
-        <li><strong>Ro Captain – WheelsEye</strong> (Apr 2021 – Jul 2022)
-          <ul>
-            <li>Led fleet analytics with Power BI dashboards, using DAX and complex SQL queries to integrate reports into operational systems, boosting efficiency by 20%.</li>
-            <li>Executed SQL ETL processes with stored procedures for data extraction and cleaning, optimizing data models for Power BI, improving data availability by 25%.</li>
-            <li>Defined KPIs (YTD sales, fleet uptime) using DAX and SQL, driving 12% sales growth through real-time Power BI visuals.</li>
-            <li>Performed trend analysis with Python and SQL queries, identifying bottlenecks and reducing delivery delays by 15%.</li>
-            <li>Documented Power BI and SQL pipeline processes, ensuring consistent reporting and data governance standards.</li>
-            <li>Delivered data-driven recommendations to stakeholders, enhancing fleet utilization with SQL-supported insights.</li>
-            <li>Automated recurring reports using Python scripts and SQL-driven Power BI refreshes, saving 10 hours weekly.</li>
-            <li>Trained operations team on Power BI and basic SQL query writing, increasing analytics adoption by 30%.</li>
-          </ul>
-        </li>
-        <li><strong>Key Account Manager – Rupeek</strong> (Oct 2020 – Apr 2021)
-          <ul>
-            <li>Exceeded sales targets by 15% through lead generation and customer acquisition.</li>
-            <li>Enhanced stakeholder satisfaction through effective relationship management.</li>
-          </ul>
-        </li>
-        <li><strong>Vendor Manager – Net Ambit</strong> (Feb 2019 – Oct 2020)
-          <ul>
-            <li>Streamlined restaurant onboarding for Swiggy, reducing setup time by 18% using data-driven coordination.</li>
-            <li>Optimized menus and pricing with Excel, increasing order acceptance rates by 20%.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Power BI Developer with over 4 years of experience delivering actionable insights through data visualization, complex SQL query writing, and ETL pipelines. I specialize in creating interactive Power BI dashboards to drive business decisions in e-commerce, travel, and logistics domains.</p>
+                    <p>Self-taught in data analytics and BI tools, I’m proficient in Power BI, DAX, SQL, and Python, with a proven track record of improving operational efficiency by 20%+ through optimized data models and ad hoc reporting.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>Power BI (DAX, Power Query, RLS, Bookmarks, Tooltips, Drill-throughs)</li>
+                        <li>SQL (Hive, BigQuery, MySQL; CTEs, Window Functions, Query Optimization)</li>
+                        <li>Python (Pandas, NumPy), M Language</li>
+                        <li>ETL Pipelines, Data Modeling, Ad Hoc Reporting</li>
+                        <li>Excel (Advanced Formulas, PivotTables), adaptable to Tableau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p>Bachelor’s Degree, Mechanical Engineering – Kammawari Sangam School of Engineering and Management (2015–2018)</p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card card">
+                        <img src="/images/flipkart.png" class="card-img-top" alt="Flipkart Sales Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Flipkart Sales Dashboard</h5>
+                            <p class="card-text">Developed interactive Power BI dashboard for the Market Place SSE Department, tracking GMV, AOV, and repeat rate. Delivered ad hoc reports with 95%+ on-time delivery, improving decision-making by 25%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card card">
+                        <img src="/images/via.png" class="card-img-top" alt="Via.com Booking Trends">
+                        <div class="card-body">
+                            <h5 class="card-title">Via.com Booking Trends</h5>
+                            <p class="card-text">Built dynamic Power BI dashboards for hotel pricing and bookings using complex SQL queries, reducing report generation time by 30%. Implemented RLS for secure data access.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card card">
+                        <img src="/images/wheelseye.png" class="card-img-top" alt="WheelsEye Fleet Analytics">
+                        <div class="card-body">
+                            <h5 class="card-title">WheelsEye Fleet Analytics</h5>
+                            <p class="card-text">Led Power BI dashboard development for fleet analytics, integrating SQL-driven KPIs (YTD sales, uptime), boosting operational efficiency by 20%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ajithkumarrs1994@gmail.com">ajithkumarrs1994@gmail.com</a></p>
-      <p>Phone: +91 9035331351</p>
-      <p>Location: Bengaluru, India</p>
-    </div>
-  </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <ul>
+                <li><strong>Business Intelligence Analyst – Flipkart</strong> (Aug 2024 – Present)
+                    <ul>
+                        <li>Designed Power BI dashboards with DAX and KPI trackers (GMV, AOV), improving decision-making by 25%.</li>
+                        <li>Delivered ad hoc reports with 95%+ on-time delivery using SQL and Power BI.</li>
+                        <li>Optimized ETL pipelines with Hive and BigQuery, reducing data processing time by 20%.</li>
+                        <li><a href="/Ajiths_Resume.pdf" target="_blank">View full experience in resume</a></li>
+                    </ul>
+                </li>
+                <li><strong>Senior Consultant – Via.com / EBIX Travels</strong> (Sep 2022 – Aug 2024)
+                    <ul>
+                        <li>Built Power BI dashboards for booking trends, reducing report generation time by 30%.</li>
+                        <li>Optimized SQL queries and DAX, cutting dashboard refresh times by 12%.</li>
+                        <li>Conducted EDA with Python and SQL, improving campaign targeting by 18%.</li>
+                        <li><a href="/Ajiths_Resume.pdf" target="_blank">View full experience in resume</a></li>
+                    </ul>
+                </li>
+                <li><strong>Ro Captain – WheelsEye</strong> (Apr 2021 – Jul 2022)
+                    <ul>
+                        <li>Led fleet analytics with Power BI, boosting efficiency by 20%.</li>
+                        <li>Automated reports with Python and SQL, saving 10 hours weekly.</li>
+                        <li>Trained team on Power BI, increasing analytics adoption by 30%.</li>
+                        <li><a href="/Ajiths_Resume.pdf" target="_blank">View full experience in resume</a></li>
+                    </ul>
+                </li>
+                <li><strong>Key Account Manager – Rupeek</strong> (Oct 2020 – Apr 2021)
+                    <ul>
+                        <li>Exceeded sales targets by 15% through lead generation.</li>
+                        <li><a href="/Ajiths_Resume.pdf" target="_blank">View full experience in resume</a></li>
+                    </ul>
+                </li>
+                <li><strong>Vendor Manager – Net Ambit</strong> (Feb 2019 – Oct 2020)
+                    <ul>
+                        <li>Streamlined Swiggy onboarding, reducing setup time by 18%.</li>
+                        <li><a href="/Ajiths_Resume.pdf" target="_blank">View full experience in resume</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 contact-form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Details</h5>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ajithkumarrs1994@gmail.com">ajithkumarrs1994@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919035331351">+91 9035331351</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ajith-kumar-naidu-rs-0467181a9/" target="_blank">LinkedIn Profile</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Ajithntr1/portfolio" target="_blank">GitHub Portfolio Repository</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ajith Kumar Naidu RS. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ajith-kumar-naidu-rs-0467181a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ajithntr1/portfolio" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
