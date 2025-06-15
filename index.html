@@ -13,7 +13,7 @@
       color: #333;
     }
     header {
-      background: #007acc;
+      background: rgba(0, 122, 204, 0.9);
       color: #fff;
       padding: 2rem;
       text-align: center;
@@ -25,13 +25,13 @@
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
     }
     .section {
-      background: #fff;
       margin-bottom: 2rem;
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .section h2 {
       margin-top: 0;
@@ -67,10 +67,10 @@
     <div class="section">
       <h2>Skills</h2>
       <ul>
-        <li>BI Tools: Power BI (DAX, Power Query, RLS, Bookmarks, Tooltips, Drill-throughs), Excel (Advanced Formulas, PivotTables), adaptable to Tableau</li>
-        <li>Programming: SQL (Hive, BigQuery, MySQL), Python (Pandas, NumPy), M Language</li>
-        <li>Data Analysis: Data Modeling, ETL Pipelines, Data Cleaning, Data Integration, Statistical Analysis</li>
-        <li>Reporting & Analytics: EDA, KPI Dashboards, Time Series Analysis, Report Automation</li>
+        <li>BI Tools: Power BI (DAX, Power Query, RLS, Bookmarks, Tooltips, Drill-throughs), Excel (Advanced Formulas, PivotTables, Dashboards, VLOOKUP, Data Validation), adaptable to Tableau</li>
+        <li>Programming: SQL (Hive, BigQuery, MySQL; Complex Query Writing, CTEs, Window Functions, Stored Procedures, Query Optimization), Python (Pandas, NumPy), M Language</li>
+        <li>Data Analysis: Data Modeling, ETL Pipelines, Data Cleaning, Data Extraction, Data Integration, Statistical Analysis, SQL Query Development, Ad Hoc Reporting</li>
+        <li>Reporting & Analytics: Exploratory Data Analysis (EDA), KPI Dashboards, Time Series Analysis, Data Governance, Report Automation, Performance Optimization</li>
         <li>Soft Skills: Critical Thinking, Communication, Stakeholder Collaboration, Problem-Solving</li>
         <li>Domains: E-commerce, Travel & Hospitality, Logistics</li>
       </ul>
@@ -78,38 +78,58 @@
 
     <div class="section">
       <h2>Experience</h2>
-      <h3>Business Intelligence Analyst – Flipkart</h3>
-      <p><strong>Bengaluru | August 2024 – Present</strong></p>
       <ul>
-        <li>Built SQL + Power BI dashboards with KPIs for GMV, selection health, repeat rate.</li>
-        <li>Engineered Hive + Spark ETL pipelines; reduced data refresh time by 20%.</li>
-        <li>Delivered ad hoc reports with 95%+ SLA compliance and DAX performance improvements.</li>
-        <li>Implemented Row-Level Security and integrated reports into internal apps.</li>
-      </ul>
-      <h3>Senior Consultant – Via.com / Ebix Travels</h3>
-      <p><strong>Bengaluru | Sep 2022 – Aug 2024</strong></p>
-      <ul>
-        <li>Built Power BI dashboards with DAX, RLS and complex SQL stored procedures.</li>
-        <li>Performed EDA with Python + SQL; detected booking patterns and revenue anomalies.</li>
-        <li>Tracked KPIs like RevPAR, ADR and occupancy; reduced reporting time by 30%.</li>
-        <li>Integrated dashboards into partner portals and collaborated with product teams.</li>
-      </ul>
-      <h3>Ro Captain – WheelsEye</h3>
-      <p><strong>Bengaluru | Apr 2021 – Jul 2022</strong></p>
-      <ul>
-        <li>Led analytics in fleet management; built KPI dashboards and automated reports.</li>
-        <li>Performed delivery delay analysis using SQL and Python.</li>
-        <li>Defined performance KPIs and trained teams in Power BI adoption.</li>
-      </ul>
-      <h3>Key Account Manager – Rupeek</h3>
-      <p><strong>Bengaluru | Oct 2020 – Apr 2021</strong></p>
-      <ul>
-        <li>Achieved 15% sales growth and improved customer satisfaction via reports.</li>
-      </ul>
-      <h3>Vendor Manager – Net Ambit</h3>
-      <p><strong>Bengaluru | Feb 2019 – Oct 2020</strong></p>
-      <ul>
-        <li>Onboarded Swiggy restaurants and optimized menus with Excel.</li>
+        <li><strong>Business Intelligence Analyst – Flipkart</strong> (Aug 2024 – Present)
+          <ul>
+            <li>Wrote complex SQL queries (CTEs, window functions) to extract and clean large-scale datasets (sales, selection, seller, campaigns) for the Market Place SSE Department, achieving 99.5%+ reporting accuracy in Power BI.</li>
+            <li>Developed optimized ETL pipelines using Hive, Spark, and BigQuery for data integration into Power BI, reducing data processing time by 20%.</li>
+            <li>Designed interactive Power BI dashboards with DAX, Power Query, and KPI trackers (GMV, AOV, repeat rate), improving stakeholder decision-making efficiency by 25%.</li>
+            <li>Optimized Power BI report performance by refining DAX queries and SQL data models, improving dashboard load times by 15%.</li>
+            <li>Conducted Exploratory Data Analysis (EDA) with SQL and Python (Pandas) to identify trends, pricing gaps, and bottlenecks in listings, enhancing selection health by 15%.</li>
+            <li>Delivered ad hoc Power BI reports and SQL-based analyses for urgent stakeholder requests, enabling rapid decision-making with 95%+ on-time delivery.</li>
+            <li>Integrated Power BI reports into internal Marketplace applications for real-time data visualization, leveraging SQL queries and Spark backends.</li>
+            <li>Implemented data governance practices, including Row-Level Security (RLS) in Power BI, ensuring compliance with internal data policies.</li>
+            <li>Performed MoM/YoY performance analysis using DAX and optimized SQL queries, enhancing campaign and assortment strategies.</li>
+            <li>Collaborated with senior leadership to deliver actionable insights within SLA timelines, using SQL-driven Power BI solutions.</li>
+          </ul>
+        </li>
+        <li><strong>Senior Consultant – Via.com / EBIX Travels</strong> (Sep 2022 – Aug 2024)
+          <ul>
+            <li>Built dynamic Power BI dashboards for hotel pricing and booking trends using complex SQL queries (stored procedures, joins), reducing report generation time by 30%.</li>
+            <li>Engineered SQL-based ETL pipelines with CTEs and views for data integration, modeling high-volume transactional data (bookings, cancellations) for Power BI.</li>
+            <li>Created secure Power BI dashboards with DAX measures, Power Query, and RLS, enabling role-based access for revenue teams, improving data accessibility by 20%.</li>
+            <li>Optimized Power BI report performance by streamlining SQL queries and DAX calculations, reducing dashboard refresh times by 12%.</li>
+            <li>Conducted EDA using Python (Pandas) and SQL window functions to detect booking anomalies, improving campaign targeting by 18%.</li>
+            <li>Tracked KPIs (RevPAR, ADR, occupancy) with SQL-driven Power BI reports, ensuring data governance compliance for B2B partners.</li>
+            <li>Integrated Power BI dashboards into partner portals for real-time tracking, supported by optimized SQL queries.</li>
+            <li>Collaborated with product and revenue teams in a client-facing role to deliver filterable reports, enhancing partner satisfaction by 15%.</li>
+            <li>Documented SQL and Power BI methodologies for self-serve analytics, ensuring scalable BI solutions.</li>
+          </ul>
+        </li>
+        <li><strong>Ro Captain – WheelsEye</strong> (Apr 2021 – Jul 2022)
+          <ul>
+            <li>Led fleet analytics with Power BI dashboards, using DAX and complex SQL queries to integrate reports into operational systems, boosting efficiency by 20%.</li>
+            <li>Executed SQL ETL processes with stored procedures for data extraction and cleaning, optimizing data models for Power BI, improving data availability by 25%.</li>
+            <li>Defined KPIs (YTD sales, fleet uptime) using DAX and SQL, driving 12% sales growth through real-time Power BI visuals.</li>
+            <li>Performed trend analysis with Python and SQL queries, identifying bottlenecks and reducing delivery delays by 15%.</li>
+            <li>Documented Power BI and SQL pipeline processes, ensuring consistent reporting and data governance standards.</li>
+            <li>Delivered data-driven recommendations to stakeholders, enhancing fleet utilization with SQL-supported insights.</li>
+            <li>Automated recurring reports using Python scripts and SQL-driven Power BI refreshes, saving 10 hours weekly.</li>
+            <li>Trained operations team on Power BI and basic SQL query writing, increasing analytics adoption by 30%.</li>
+          </ul>
+        </li>
+        <li><strong>Key Account Manager – Rupeek</strong> (Oct 2020 – Apr 2021)
+          <ul>
+            <li>Exceeded sales targets by 15% through lead generation and customer acquisition.</li>
+            <li>Enhanced stakeholder satisfaction through effective relationship management.</li>
+          </ul>
+        </li>
+        <li><strong>Vendor Manager – Net Ambit</strong> (Feb 2019 – Oct 2020)
+          <ul>
+            <li>Streamlined restaurant onboarding for Swiggy, reducing setup time by 18% using data-driven coordination.</li>
+            <li>Optimized menus and pricing with Excel, increasing order acceptance rates by 20%.</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
